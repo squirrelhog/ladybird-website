@@ -797,6 +797,128 @@ section {
 }
 
 /* ===========================
+   Endorsements Section
+   =========================== */
+
+.endorsements {
+    background: white;
+    position: relative;
+}
+
+.endorsements-category {
+    margin-bottom: 5rem;
+}
+
+.endorsements-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+.endorsements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.endorsements-grid.professional {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.endorsement-card {
+    background: var(--bg-lighter);
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+    border: 2px solid transparent;
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.endorsement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-light);
+}
+
+.endorsement-card.professional {
+    background: white;
+    border: 2px solid var(--border-color);
+}
+
+.endorsement-card.professional:hover {
+    border-color: var(--primary-color);
+    background: var(--bg-lighter);
+}
+
+.quote-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    opacity: 0.3;
+}
+
+.quote-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.endorsement-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-medium);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.endorsement-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.author-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.author-role {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-medium);
+}
+
+/* ===========================
    About Section
    =========================== */
 
@@ -1261,8 +1383,8 @@ section {
     }
 
     .nav-menu a {
-        padding: 0.6rem 0.75rem;
-        font-size: 0.85rem;
+        padding: 0.5rem 0.6rem;
+        font-size: 0.8rem;
     }
 
     .nav-logo img {
@@ -1321,6 +1443,11 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .endorsements-grid,
+    .endorsements-grid.professional {
+        grid-template-columns: 1fr;
+    }
+
     .about-logo-feature {
         padding: 2rem 2.5rem;
     }
@@ -1348,6 +1475,11 @@ section {
 }
 
 @media (max-width: 480px) {
+    .nav-menu a {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.75rem;
+    }
+
     .hero {
         padding: 60px 0 80px;
     }
@@ -1414,6 +1546,18 @@ section {
 
     .software-partners {
         padding: 2rem;
+    }
+
+    .endorsement-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .endorsement-text {
+        font-size: 1rem;
+    }
+
+    .endorsements-category {
+        margin-bottom: 3rem;
     }
 
     .about-logo-feature {
