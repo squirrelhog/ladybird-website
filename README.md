@@ -1,6 +1,6 @@
 # LadyBird Accounting Solutions Website
 
-A professional static website for LadyBird Accounting Solutions, a registered BAS Agent providing comprehensive accounting and payroll services to small businesses in Greater Sydney Area.
+A professional static website for Samantha Taylor, sole trader and registered BAS Agent trading as LadyBird Accounting Solutions, providing comprehensive accounting and payroll services to small businesses across Australia.
 
 ## Features
 
@@ -99,7 +99,7 @@ ladybirdWebsite/
 
 **LadyBird Accounting Solutions**
 - Location: Greater Sydney Area, NSW
-- Services: Registered BAS Agent, Accounting & Payroll
+- Services: BAS Preparation & Lodgement, Bookkeeping, Basic Payroll (Samantha Taylor - Registered BAS Agent No. 87821001)
 - LinkedIn: [Samantha Taylor](https://www.linkedin.com/in/samantha-taylor-ladybird/)
 
 ## License
