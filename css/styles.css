@@ -121,6 +121,22 @@ body {
     background-color: rgba(200, 64, 52, 0.08);
 }
 
+.nav-tpb {
+    display: flex;
+    align-items: center;
+}
+
+.nav-tpb-logo {
+    height: 50px;
+    width: auto;
+    transition: opacity var(--transition-fast);
+    opacity: 0.95;
+}
+
+.nav-tpb-logo:hover {
+    opacity: 1;
+}
+
 /* ===========================
    Hero Section - PROMINENT LOGO
    =========================== */
@@ -1214,12 +1230,16 @@ section {
     }
 
     .nav-menu a {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
+        padding: 0.6rem 0.75rem;
+        font-size: 0.85rem;
     }
 
     .nav-logo img {
         height: 55px;
+    }
+
+    .nav-tpb-logo {
+        height: 40px;
     }
 
     .hero {
