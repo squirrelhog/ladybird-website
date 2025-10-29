@@ -1284,6 +1284,21 @@ section {
     padding: 4rem 0 2rem;
 }
 
+.footer-banner {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-banner p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
 .footer-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1.2fr;
