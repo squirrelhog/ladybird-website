@@ -310,6 +310,52 @@ body {
     letter-spacing: 0.05em;
 }
 
+/* Hero Accreditation */
+.hero-accreditation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem auto 2rem;
+    padding: 2rem 3rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    max-width: 600px;
+    border: 2px solid var(--border-color);
+    animation: slideUp 0.8s ease-out 1.2s both;
+}
+
+.hero-accreditation .tpb-logo {
+    height: 120px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.accreditation-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.accreditation-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.accreditation-number {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.accreditation-abn {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-medium);
+}
+
 /* ===========================
    Buttons
    =========================== */
@@ -971,6 +1017,22 @@ section {
     color: rgba(255, 255, 255, 0.7);
     font-size: 1rem;
     font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.footer-tpb {
+    margin-top: 1rem;
+}
+
+.tpb-logo-footer {
+    height: 60px;
+    width: auto;
+    opacity: 0.9;
+    transition: opacity var(--transition-fast);
+}
+
+.tpb-logo-footer:hover {
+    opacity: 1;
 }
 
 .footer-column h4 {
@@ -1062,6 +1124,17 @@ section {
         gap: 2rem;
     }
 
+    .hero-accreditation {
+        flex-direction: column;
+        padding: 1.5rem 2rem;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .hero-accreditation .tpb-logo {
+        height: 100px;
+    }
+
     section {
         padding: 70px 0;
     }
@@ -1108,6 +1181,31 @@ section {
 
     .stat-number {
         font-size: 2.5rem;
+    }
+
+    .hero-accreditation {
+        padding: 1.25rem 1.5rem;
+        margin: 2rem auto 1.5rem;
+    }
+
+    .hero-accreditation .tpb-logo {
+        height: 80px;
+    }
+
+    .accreditation-label {
+        font-size: 0.9rem;
+    }
+
+    .accreditation-number {
+        font-size: 1rem;
+    }
+
+    .accreditation-abn {
+        font-size: 0.85rem;
+    }
+
+    .tpb-logo-footer {
+        height: 50px;
     }
 
     section {
