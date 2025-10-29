@@ -1143,6 +1143,15 @@ section {
     font-style: italic;
 }
 
+.contact-email {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
 /* ===========================
    Footer
    =========================== */
